@@ -1,0 +1,45 @@
+/* Container chính */
+.carTypesBarContainer {
+  width: 100%; /* Kéo dài toàn bộ màn hình */
+  background-color: #ffffff; /* Màu nền bao quanh */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Đổ bóng cho khung */
+  border: 1px solid #e0e0e0; /* Viền cho khung */
+  padding: 20px 0;
+  margin-top: 20px; /* Thêm khoảng cách phía trên */
+  box-sizing: border-box;
+  position: relative; /* Cần thiết để đặt nút thoát ở góc phải */
+}
+
+
+/* Thanh công cụ chính */
+.carTypesBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+/* Ô kiểu xe */
+.carType {
+  flex: 1; /* Các ô có kích thước bằng nhau */
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold; /* Làm chữ in đậm */
+  color: #000000;
+  padding: 10px 0;
+  border-right: 1px solid #333; /* Viền giữa các ô */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carType:last-child {
+  border-right: none; /* Bỏ viền cho ô cuối cùng */
+}
+
+.carType:hover {
+  background-color: #f5f5f5; /* Màu nền nhạt hơn khi hover */
+  color: #d32f2f; /* Chữ màu đỏ khi hover */
+}
+
+
+
