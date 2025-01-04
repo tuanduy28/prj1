@@ -1,0 +1,92 @@
+/* Đặt nền mờ cho form */
+.schedule-form {
+    background: rgba(255, 255, 255, 0.85); /* Nền trắng với độ trong suốt */
+    border-radius: 10px; /* Bo góc */
+    padding: 30px 40px; /* Khoảng cách bên trong */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+    max-width: 500px; /* Đặt chiều rộng tối đa cho form */
+    width: 100%; /* Đảm bảo form co giãn theo màn hình */
+    
+  }
+  
+  /* Căn giữa tiêu đề form */
+  .schedule-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Kiểu chung cho container */
+  .schedule-container {
+    background-image: url('schedule.jpg'); /* Đường dẫn đến ảnh nền */
+    background-size: cover; /* Phủ kín toàn bộ phần tử */
+    background-position: center; /* Đặt ảnh nền ở giữa */
+    background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+    min-height: 100vh; /* Chiều cao tối thiểu của trang */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Cập nhật nút thoát */
+  .exit-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  .exit-button::before {
+    content: "\1F6AA"; /* Unicode biểu tượng xe đẩy */
+    font-size: 1.2rem;
+  }
+  
+  .exit-button:hover {
+    background-color: #d32f2f;
+  }
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; /* Đảm bảo label và input nằm trên các dòng riêng */
+    align-items: flex-start;
+  }
+  
+  select {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%; /* Đảm bảo select phủ đủ chiều ngang */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+/* Nút Submit */
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Khoảng cách với các phần tử phía trên */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều ngang */
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
